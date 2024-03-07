@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.3.4)  7 MAR 2024 10:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10.12) (preloaded format=pdflatex 2024.3.4)  7 MAR 2024 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -298,412 +298,891 @@ LaTeX Warning: Citation `ScikitLearn2023' on page 1 undefined on input line 83.
 
 LaTeX Warning: Citation `Jurafsky2020' on page 1 undefined on input line 83.
 
-
-LaTeX Warning: Citation `Russell2016' on page 1 undefined on input line 101.
-
-
-LaTeX Warning: Citation `Poole2010' on page 1 undefined on input line 105.
-
-
-LaTeX Warning: Citation `Alpaydin2020' on page 1 undefined on input line 109.
-
-
-LaTeX Warning: Citation `Jurafsky2020' on page 1 undefined on input line 112.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:90: Missing $ inserted.
+<inserted text> 
+                $
+l.90     battery_
+                 power: Potência da bateria do dispositivo (provavelmente e...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 1 undefined on input line 116.
+LaTeX Warning: Command \^ invalid in math mode on input line 90.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:90: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.90     battery_power: Potê
+                             ncia da bateria do dispositivo (provavelmente e...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Citation `LeCun2015' on page 1 undefined on input line 119.
+LaTeX Warning: Command \^ invalid in math mode on input line 91.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:91: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.91 ...dade de Bluetooth (0 ou 1, indicando ausê
+                                                  ncia ou presença, respect...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Citation `Bishop2006' on page 1 undefined on input line 125.
+LaTeX Warning: Command \c invalid in math mode on input line 91.
 
 
-LaTeX Warning: Citation `Mohri2018' on page 1 undefined on input line 132.
+LaTeX Warning: Command \' invalid in math mode on input line 92.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:92: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.92     clock_speed: Velocidade de reló
+                                         gio do processador do dispositivo (...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
 
 
-LaTeX Warning: Citation `Hinton2006' on page 1 undefined on input line 135.
+LaTeX Warning: Command \^ invalid in math mode on input line 94.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:94: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.94     fc: Megapixels da câ
+                              mera frontal.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 96.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:96: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.96     int_memory: Memó
+                          ria interna do dispositivo (provavelmente em GB).
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 97.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:97: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.97     m_dep: Profundidade do dispositivo mó
+                                               vel em cm.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 98.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:98: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.98     mobile_wt: Peso do dispositivo mó
+                                           vel (em gramas).
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 99.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:99: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.99     n_cores: Nú
+                     mero de cores do processador.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 100.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:100: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.100     pc: Megapixels da câ
+                               mera principal (traseira).
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 101.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 101.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:101: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.101     px_height: Altura da resoluçã
+                                         o de pixel da tela.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 102.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 102.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:102: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.102     px_width: Largura da resoluçã
+                                         o de pixel da tela.
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 103.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:103: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.103     ram: Memó
+                    ria RAM do dispositivo (provavelmente em MB ou GB).
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 106.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:106: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.106     talk_time: Tempo má
+                              ximo de conversação em uma única carga de b...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 106.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 106.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:106: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.106     talk_time: Tempo máximo de conversaçã
+                                                  o em uma única carga de b...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 106.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:106: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.106 ... Tempo máximo de conversação em uma ú
+                                                  nica carga de bateria (pro...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 108.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 108.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:108: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.108     touch_screen: Presença de tela sensí
+                                                vel ao toque (0 ou 1).
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:108: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.108     touch_screen: Presença de tela sensí
+                                                vel ao toque (0 ou 1).
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 108.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:110: Missing $ inserted.
+<inserted text> 
+                $
+l.110 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:110: Missing } inserted.
+<inserted text> 
+                }
+l.110 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (96.14812pt too wide) in paragraph at lines 90--110
+[]\OT1/ptm/m/n/10 battery$[]\OML/cmm/m/it/10 ower \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 Pot[]nciadabateriadodispositivo\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 provavelmenteemmAh\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :blue \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (170.90485pt too wide) in paragraph at lines 90--110
+\OML/cmm/m/it/10 DisponibilidadedeBluetooth\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ou\OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; indicandoaus[]nciaoupresen[]a; respectivamente\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :clock[]peed \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (112.56856pt too wide) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Velocidadederel[]giodoprocessadordodispositivo\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 provavelmenteemGHz\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :dual[]im \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 SuporteadualSIM\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ou\OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 :fc \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Megapixelsdac[]merafrontal:four[] \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Disponibilidadede\OT1/cmr/m/n/10 4\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ou\OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 :int[]emory \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (17.43434pt too wide) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Mem[]riainternadodispositivo\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 provavelmenteemGB\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :m[]ep \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Profundidadedodispositivom[]velemcm:mobile[]t \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Pesododispositivom[]vel\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 emgramas\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :n[]ores \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 N[]merodecoresdoprocessador:pc \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Megapixelsdac[]meraprincipal\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 traseira\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :px[]eight \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Alturadaresolu[][]odepixeldatela:px[]idth \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Larguradaresolu[][]odepixeldatela:ram \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (30.12025pt too wide) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Mem[]riaRAMdodispositivo\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 provavelmenteemMBouGB\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :sc[] \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Alturadateladodispositivoemcm:sc[] \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Larguradateladodispositivoemcm:talk[]ime \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (152.64862pt too wide) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Tempom[]ximodeconversa[][]oemuma[]nicacargadebateria\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 provavelmenteemhoras\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 :three[] \OT1/cmr/m/n/10 :
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Disponibilidadede\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 G\OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ou\OT1/cmr/m/n/10 1)\OML/cmm/m/it/10 :touch[]creen \OT1/cmr/m/n/10 :
+ []
+
+
+Overfull \hbox (83.58397pt too wide) in paragraph at lines 90--110
+\OML/cmm/m/it/10 Presen[]adetelasens[]$ 
+ []
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: Missing $ inserted.
+<inserted text> 
+                $
+l.111 ...e de dados também inclui a coluna price_
+                                                  range, que parece ser a va...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 111.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.111 ...luna price_range, que parece ser a variá
+                                                  vel alvo (target), indican...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 111.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 111.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.111 ...ço do dispositivo. Essa base de dados é
+                                                   provavelmente usada para ...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 111.
+
+
+LaTeX Warning: Command \~ invalid in math mode on input line 111.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.111 ...ovavelmente usada para modelar a relaçã
+                                                  o entre as característica...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 111.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.111 ...a modelar a relação entre as caracterí
+                                                  sticas técnicas de um tel...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: Missing { inserted.
+<to be read again> 
+                   \begingroup 
+l.111 ...a modelar a relação entre as caracterí
+                                                  sticas técnicas de um tel...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+
+LaTeX Warning: Command \i invalid in math mode on input line 111.
+
+
+LaTeX Warning: Command \' invalid in math mode on input line 111.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: Please use \mathaccent for accents in math mode.
+\add@accent ... \let \ignorespaces \relax \accent 
+                                                  #1 #2\egroup \ifmmode \els...
+l.111 ...a relação entre as características té
+                                                  cnicas de um telefone celu...
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 111.
+
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:111: LaTeX Error: Unicode character ​ (U+200B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 ...fone celular e seu preço de mercado. ​
+                                                  
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:112: LaTeX Error: Unicode character ​ (U+200B)
+               not set up for use with LaTeX.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 ​
+         
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:113: Missing $ inserted.
+<inserted text> 
+                $
+l.113 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:113: Missing } inserted.
+<inserted text> 
+                }
+l.113 
+      
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+[]\OT1/ptm/m/n/10 Al[]em dessas fea-tures, a base
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+\OT1/ptm/m/n/10 de da-dos tamb[]em in-clui a col-una
+ []
+
+
+Overfull \hbox (717.18576pt too wide) in paragraph at lines 111--113
+\OT1/ptm/m/n/10 price$[]\OML/cmm/m/it/10 ange; quepareceseravari[]velalvo\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 target\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 ; indicandoafaixadepre[]ododispositivo:Essabasededados[]provavelmenteusadaparamodelararela[][]oentreascaracter[]$ 
+ []
+
+
+LaTeX Warning: Citation `Russell2016' on page 1 undefined on input line 128.
+
+
+LaTeX Warning: Citation `Poole2010' on page 1 undefined on input line 132.
+
+
+LaTeX Warning: Citation `Alpaydin2020' on page 1 undefined on input line 136.
+
+
+LaTeX Warning: Citation `Jurafsky2020' on page 1 undefined on input line 139.
 
 [1{C:/Users/raulp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ]
 
-LaTeX Warning: Citation `Sutton2018' on page 2 undefined on input line 138.
+LaTeX Warning: Citation `Goodfellow2016' on page 2 undefined on input line 143.
 
 
-LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 141.
+LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 146.
 
 
-LaTeX Warning: Citation `Haykin2009' on page 2 undefined on input line 147.
+LaTeX Warning: Citation `Bishop2006' on page 2 undefined on input line 152.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 2 undefined on input line 153.
+LaTeX Warning: Citation `Mohri2018' on page 2 undefined on input line 159.
 
 
-LaTeX Warning: Citation `Schmidhuber2015' on page 2 undefined on input line 157.
+LaTeX Warning: Citation `Hinton2006' on page 2 undefined on input line 162.
 
 
-LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 161.
+LaTeX Warning: Citation `Sutton2018' on page 2 undefined on input line 165.
 
 
-LaTeX Warning: Citation `Graves2013' on page 2 undefined on input line 168.
+LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 168.
 
 
-LaTeX Warning: Citation `Sutskever2014' on page 2 undefined on input line 170.
+LaTeX Warning: Citation `Haykin2009' on page 2 undefined on input line 174.
 
 
-LaTeX Warning: Citation `Elman1990' on page 2 undefined on input line 175.
+LaTeX Warning: Citation `Goodfellow2016' on page 2 undefined on input line 180.
 
 
-LaTeX Warning: Citation `Hochreiter1997' on page 2 undefined on input line 181.
+LaTeX Warning: Citation `Schmidhuber2015' on page 2 undefined on input line 184.
 
 
-LaTeX Warning: Citation `Cho2014' on page 2 undefined on input line 181.
+LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 188.
 
 
-LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 189.
+LaTeX Warning: Citation `Graves2013' on page 2 undefined on input line 195.
 
 
-LaTeX Warning: Citation `Krizhevsky2012' on page 2 undefined on input line 193.
+LaTeX Warning: Citation `Sutskever2014' on page 2 undefined on input line 197.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 2 undefined on input line 195.
+Underfull \vbox (badness 1158) has occurred while \output is active []
 
 
-LaTeX Warning: Citation `Russakovsky2015' on page 2 undefined on input line 198.
+
+LaTeX Warning: Citation `Elman1990' on page 2 undefined on input line 202.
 
 
-LaTeX Warning: Citation `Kim2014' on page 2 undefined on input line 201.
+LaTeX Warning: Citation `Hochreiter1997' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 209.
+LaTeX Warning: Citation `Cho2014' on page 2 undefined on input line 208.
 
 
-LaTeX Warning: Citation `Schmidhuber2015' on page 2 undefined on input line 213.
+LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 216.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 2 undefined on input line 218.
+LaTeX Warning: Citation `Krizhevsky2012' on page 2 undefined on input line 220.
 
 
-LaTeX Warning: Citation `Zhang2018' on page 2 undefined on input line 221.
+LaTeX Warning: Citation `Goodfellow2016' on page 2 undefined on input line 222.
 
 
-LaTeX Warning: Citation `Manning2014' on page 2 undefined on input line 229.
+LaTeX Warning: Citation `Russakovsky2015' on page 2 undefined on input line 225.
+
+
+LaTeX Warning: Citation `Kim2014' on page 2 undefined on input line 228.
+
+
+LaTeX Warning: Citation `LeCun2015' on page 2 undefined on input line 236.
+
+
+LaTeX Warning: Citation `Schmidhuber2015' on page 2 undefined on input line 240.
 
 [2]
-<parse_tree.png, id=13, 204.01219pt x 95.6072pt>
+
+LaTeX Warning: Citation `Goodfellow2016' on page 3 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Zhang2018' on page 3 undefined on input line 248.
+
+
+LaTeX Warning: Citation `Manning2014' on page 3 undefined on input line 256.
+
+<parse_tree.png, id=16, 204.01219pt x 95.6072pt>
 File: parse_tree.png Graphic file (type png)
 <use parse_tree.png>
-Package pdftex.def Info: parse_tree.png  used on input line 246.
+Package pdftex.def Info: parse_tree.png  used on input line 273.
 (pdftex.def)             Requested size: 204.01169pt x 95.60695pt.
 
+LaTeX Warning: Citation `Jurafsky2019' on page 3 undefined on input line 286.
 
-LaTeX Warning: Citation `Jurafsky2019' on page 3 undefined on input line 259.
 
-
-Underfull \hbox (badness 3219) in paragraph at lines 274--276
+Underfull \hbox (badness 3219) in paragraph at lines 301--303
 \OT1/ptm/m/n/10 chat-bots s[]ao sis-temas com-puta-cionais que uti-lizam
  []
 
 
-LaTeX Warning: Citation `Manning2014' on page 3 undefined on input line 289.
+LaTeX Warning: Citation `Manning2014' on page 3 undefined on input line 316.
 
 
-LaTeX Warning: Citation `Bird2009' on page 3 undefined on input line 297.
+LaTeX Warning: Citation `Bird2009' on page 3 undefined on input line 324.
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 294--298
+Underfull \hbox (badness 1527) in paragraph at lines 321--325
 []\OT1/ptm/b/n/10 Lematiza[][]ao\OT1/ptm/m/n/10 , por outro lado, en-volve a redu[][]ao das
  []
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 3 undefined on input line 302.
+LaTeX Warning: Citation `Goodfellow2016' on page 3 undefined on input line 329.
 
 
-LaTeX Warning: Citation `Vaswani2017' on page 3 undefined on input line 306.
+LaTeX Warning: Citation `Vaswani2017' on page 3 undefined on input line 333.
 
 
-LaTeX Warning: Citation `Bird2009' on page 3 undefined on input line 310.
+LaTeX Warning: Citation `Bird2009' on page 3 undefined on input line 337.
 
 
-LaTeX Warning: Citation `McTear2016' on page 3 undefined on input line 317.
+LaTeX Warning: Citation `McTear2016' on page 3 undefined on input line 344.
 
 
-LaTeX Warning: Citation `Laranjo2018' on page 3 undefined on input line 328.
+Underfull \vbox (badness 2735) has occurred while \output is active []
+
+ [3 <./parse_tree.png>]
+
+LaTeX Warning: Citation `Laranjo2018' on page 4 undefined on input line 355.
 
 
-LaTeX Warning: Citation `Brown2020' on page 3 undefined on input line 334.
+LaTeX Warning: Citation `Brown2020' on page 4 undefined on input line 361.
 
 
-LaTeX Warning: Citation `Henderson2019' on page 3 undefined on input line 340.
-
-[3 <./parse_tree.png>]
-
-LaTeX Warning: Citation `McTear2016' on page 4 undefined on input line 344.
+LaTeX Warning: Citation `Henderson2019' on page 4 undefined on input line 367.
 
 
-LaTeX Warning: Citation `Bickmore2018' on page 4 undefined on input line 352.
+LaTeX Warning: Citation `McTear2016' on page 4 undefined on input line 371.
 
 
-LaTeX Warning: Citation `Jiang2017' on page 4 undefined on input line 354.
+LaTeX Warning: Citation `Bickmore2018' on page 4 undefined on input line 379.
 
 
-LaTeX Warning: Citation `Dale2016' on page 4 undefined on input line 358.
+LaTeX Warning: Citation `Jiang2017' on page 4 undefined on input line 381.
 
 
-LaTeX Warning: Citation `VanPinxteren2020' on page 4 undefined on input line 360.
+LaTeX Warning: Citation `Dale2016' on page 4 undefined on input line 385.
 
 
-LaTeX Warning: Citation `Laranjo2018' on page 4 undefined on input line 368.
+LaTeX Warning: Citation `VanPinxteren2020' on page 4 undefined on input line 387.
 
 
-LaTeX Warning: Citation `Bickmore2005' on page 4 undefined on input line 371.
+LaTeX Warning: Citation `Laranjo2018' on page 4 undefined on input line 395.
 
 
-LaTeX Warning: Citation `Knijnenburg2016' on page 4 undefined on input line 375.
+LaTeX Warning: Citation `Bickmore2005' on page 4 undefined on input line 398.
 
 
-LaTeX Warning: Citation `McTear2016' on page 4 undefined on input line 378.
+LaTeX Warning: Citation `Knijnenburg2016' on page 4 undefined on input line 402.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--379
+LaTeX Warning: Citation `McTear2016' on page 4 undefined on input line 405.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 400--406
 []\OT1/ptm/m/n/10 Outro es-tudo de Kni-j-nen-burg e Willem-sen so-bre
  []
 
 
-Underfull \hbox (badness 6542) in paragraph at lines 373--379
+Underfull \hbox (badness 6542) in paragraph at lines 400--406
 \OT1/ptm/m/n/10 personaliza[][]ao em sis-temas de recomenda[][]ao en-fa-tiza
  []
 
 
-LaTeX Warning: Citation `Krippendorff2013' on page 4 undefined on input line 415.
+LaTeX Warning: Citation `Krippendorff2013' on page 4 undefined on input line 442.
 
 
-LaTeX Warning: Citation `Etikan2016' on page 4 undefined on input line 419.
+LaTeX Warning: Citation `Etikan2016' on page 4 undefined on input line 446.
 
 
-LaTeX Warning: Citation `Lopez2018' on page 4 undefined on input line 430.
-
-
-LaTeX Warning: Citation `Crockford2006' on page 4 undefined on input line 443.
-
-
-LaTeX Warning: Citation `Reitz2016' on page 4 undefined on input line 453.
-
-
-LaTeX Warning: Citation `Richardson2007' on page 4 undefined on input line 459.
-
-
-LaTeX Warning: Citation `Grinberg2018' on page 4 undefined on input line 465.
+LaTeX Warning: Citation `Lopez2018' on page 4 undefined on input line 457.
 
 [4]
 
-LaTeX Warning: Citation `Bird2009' on page 5 undefined on input line 470.
+LaTeX Warning: Citation `Crockford2006' on page 5 undefined on input line 470.
 
 
-LaTeX Warning: Citation `Abadi2016' on page 5 undefined on input line 475.
+LaTeX Warning: Citation `Reitz2016' on page 5 undefined on input line 480.
 
 
-LaTeX Warning: Citation `Chollet2015' on page 5 undefined on input line 477.
+LaTeX Warning: Citation `Richardson2007' on page 5 undefined on input line 486.
 
 
-LaTeX Warning: Citation `Hunter2007' on page 5 undefined on input line 483.
+LaTeX Warning: Citation `Grinberg2018' on page 5 undefined on input line 492.
 
 
-LaTeX Warning: Citation `Harris2020' on page 5 undefined on input line 488.
+LaTeX Warning: Citation `Bird2009' on page 5 undefined on input line 497.
 
 
-LaTeX Warning: Citation `Sokolova2009' on page 5 undefined on input line 518.
+LaTeX Warning: Citation `Abadi2016' on page 5 undefined on input line 502.
 
 
-LaTeX Warning: Citation `Davis2006' on page 5 undefined on input line 522.
+LaTeX Warning: Citation `Chollet2015' on page 5 undefined on input line 504.
 
 
-LaTeX Warning: Citation `Manning1999' on page 5 undefined on input line 524.
+LaTeX Warning: Citation `Hunter2007' on page 5 undefined on input line 510.
 
 
-LaTeX Warning: Citation `VanRijsbergen1979' on page 5 undefined on input line 526.
+LaTeX Warning: Citation `Harris2020' on page 5 undefined on input line 515.
 
 
-LaTeX Warning: Citation `Bengio2012' on page 5 undefined on input line 530.
+LaTeX Warning: Citation `Sokolova2009' on page 5 undefined on input line 545.
 
 
-LaTeX Warning: Citation `Reichheld2003' on page 5 undefined on input line 537.
+LaTeX Warning: Citation `Davis2006' on page 5 undefined on input line 549.
 
 
-LaTeX Warning: Citation `Chollet2017' on page 5 undefined on input line 556.
+LaTeX Warning: Citation `Manning1999' on page 5 undefined on input line 551.
 
 
-Underfull \hbox (badness 4595) in paragraph at lines 552--557
+LaTeX Warning: Citation `VanRijsbergen1979' on page 5 undefined on input line 553.
+
+
+LaTeX Warning: Citation `Bengio2012' on page 5 undefined on input line 557.
+
+
+LaTeX Warning: Citation `Reichheld2003' on page 5 undefined on input line 564.
+
+
+LaTeX Warning: Citation `Chollet2017' on page 5 undefined on input line 583.
+
+
+Underfull \hbox (badness 4595) in paragraph at lines 579--584
 []\OT1/ptm/m/n/10 O de-sen-volvi-mento do chat-bot as-sis-tivo en-volveu a
  []
 
+[5]
 
-LaTeX Warning: Citation `Goodfellow2016' on page 5 undefined on input line 563.
-
-
-LaTeX Warning: Citation `Bishop2006' on page 5 undefined on input line 566.
+LaTeX Warning: Citation `Goodfellow2016' on page 6 undefined on input line 590.
 
 
-Underfull \hbox (badness 2856) in paragraph at lines 565--567
+LaTeX Warning: Citation `Bishop2006' on page 6 undefined on input line 593.
+
+
+Underfull \hbox (badness 2856) in paragraph at lines 592--594
 []\OT1/ptm/b/n/10 Camada de Sa[]^^Pda: \OT1/ptm/m/n/10 Neur[]onios cor-re-spon-dentes ao
  []
 
 
-LaTeX Warning: Citation `Srivastava2014' on page 5 undefined on input line 570.
+LaTeX Warning: Citation `Srivastava2014' on page 6 undefined on input line 597.
 
 
-LaTeX Warning: Citation `Sutskever2013' on page 5 undefined on input line 572.
+LaTeX Warning: Citation `Sutskever2013' on page 6 undefined on input line 599.
 
 
-LaTeX Warning: Citation `Goodfellow2016' on page 5 undefined on input line 576.
+LaTeX Warning: Citation `Goodfellow2016' on page 6 undefined on input line 603.
 
 
-LaTeX Warning: Citation `Bengio2012' on page 5 undefined on input line 578.
-
-[5]
-
-LaTeX Warning: Citation `Manning1999' on page 6 undefined on input line 584.
+LaTeX Warning: Citation `Bengio2012' on page 6 undefined on input line 605.
 
 
-Underfull \hbox (badness 1400) in paragraph at lines 581--585
+LaTeX Warning: Citation `Manning1999' on page 6 undefined on input line 611.
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 608--612
 []\OT1/ptm/m/n/10 Ap[]os o treina-mento, o mod-elo foi salvo no for-mato
  []
 
-<chat.png, id=25, 925.95938pt x 502.87875pt>
+<chat.png, id=28, 925.95938pt x 502.87875pt>
 File: chat.png Graphic file (type png)
 <use chat.png>
-Package pdftex.def Info: chat.png  used on input line 625.
+Package pdftex.def Info: chat.png  used on input line 652.
 (pdftex.def)             Requested size: 250.01237pt x 135.77907pt.
 
-LaTeX Warning: Citation `Sokolova2009' on page 6 undefined on input line 643.
-
-<accuracy.png, id=26, 423.08063pt x 335.75438pt>
-File: accuracy.png Graphic file (type png)
-<use accuracy.png>
-Package pdftex.def Info: accuracy.png  used on input line 649.
-(pdftex.def)             Requested size: 211.5398pt x 167.87677pt.
-<loss.png, id=27, 411.03563pt x 333.49594pt>
-File: loss.png Graphic file (type png)
-<use loss.png>
-Package pdftex.def Info: loss.png  used on input line 655.
-(pdftex.def)             Requested size: 205.5173pt x 166.74756pt.
-
-LaTeX Warning: Citation `Hastie2009' on page 6 undefined on input line 664.
-
-
-LaTeX Warning: Citation `Laranjo2018' on page 6 undefined on input line 669.
-
-
-LaTeX Warning: Citation `McTear2016' on page 6 undefined on input line 669.
+LaTeX Warning: Citation `Sokolova2009' on page 6 undefined on input line 670.
 
 [6 <./chat.png>]
+<accuracy.png, id=33, 423.08063pt x 335.75438pt>
+File: accuracy.png Graphic file (type png)
+<use accuracy.png>
+Package pdftex.def Info: accuracy.png  used on input line 676.
+(pdftex.def)             Requested size: 211.5398pt x 167.87677pt.
+<loss.png, id=34, 411.03563pt x 333.49594pt>
+File: loss.png Graphic file (type png)
+<use loss.png>
+Package pdftex.def Info: loss.png  used on input line 682.
+(pdftex.def)             Requested size: 205.5173pt x 166.74756pt.
 
-LaTeX Warning: Citation `Young2018' on page 7 undefined on input line 674.
+
+LaTeX Warning: Citation `Hastie2009' on page 7 undefined on input line 691.
 
 
-LaTeX Warning: Citation `Goggin2003' on page 7 undefined on input line 681.
+LaTeX Warning: Citation `Laranjo2018' on page 7 undefined on input line 696.
 
 
-LaTeX Warning: Citation `Chowdhary2020' on page 7 undefined on input line 695.
+LaTeX Warning: Citation `McTear2016' on page 7 undefined on input line 696.
 
 
-Underfull \hbox (badness 2799) in paragraph at lines 692--696
+LaTeX Warning: Citation `Young2018' on page 7 undefined on input line 701.
+
+
+LaTeX Warning: Citation `Goggin2003' on page 7 undefined on input line 708.
+
+
+LaTeX Warning: Citation `Chowdhary2020' on page 7 undefined on input line 722.
+
+
+Underfull \hbox (badness 2799) in paragraph at lines 719--723
 []\OT1/ptm/m/n/10 Durante o de-sen-volvi-mento do chat-bot as-sis-tivo, en-
  []
 
 
-LaTeX Warning: Citation `Devlin2019' on page 7 undefined on input line 700.
+LaTeX Warning: Citation `Devlin2019' on page 7 undefined on input line 727.
 
 
-LaTeX Warning: Citation `Hastie2009' on page 7 undefined on input line 704.
+LaTeX Warning: Citation `Hastie2009' on page 7 undefined on input line 731.
 
 
-LaTeX Warning: Citation `Picard2000' on page 7 undefined on input line 709.
+LaTeX Warning: Citation `Picard2000' on page 7 undefined on input line 736.
 
 
-LaTeX Warning: Citation `McTear2016' on page 7 undefined on input line 711.
-
-
-LaTeX Warning: Citation `Young2018' on page 7 undefined on input line 731.
-
-
-LaTeX Warning: Citation `McTear2016' on page 7 undefined on input line 739.
+LaTeX Warning: Citation `McTear2016' on page 7 undefined on input line 738.
 
 [7 <./accuracy.png> <./loss.png>]
-Underfull \hbox (badness 2726) in paragraph at lines 753--754
+
+LaTeX Warning: Citation `Young2018' on page 8 undefined on input line 758.
+
+
+LaTeX Warning: Citation `McTear2016' on page 8 undefined on input line 766.
+
+
+Underfull \hbox (badness 2726) in paragraph at lines 780--781
 []\OT1/ptm/m/n/8 M. Mercier. "O que []e uma rede neu-ral pro-funda?". Bot-press,
  []
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 769--770
+Underfull \hbox (badness 6510) in paragraph at lines 796--797
 []\OT1/ptm/m/n/8 K. Cho et al., "Learn-ing phrase rep-re-sen-ta-tions us-ing RNN
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 792--793
+Underfull \hbox (badness 10000) in paragraph at lines 819--820
 []\OT1/ptm/m/n/8 D. Crock-ford, "The ap-pli-ca-tion/json Me-dia Type for
  []
 
 
-Underfull \hbox (badness 4156) in paragraph at lines 792--793
+Underfull \hbox (badness 4156) in paragraph at lines 819--820
 \OT1/ptm/m/n/8 JavaScript Ob-ject No-ta-tion (JSON)", 2006. [On-line]. Avail-able:
  []
 
 
-Underfull \hbox (badness 4927) in paragraph at lines 793--794
+Underfull \hbox (badness 4927) in paragraph at lines 820--821
 []\OT1/ptm/m/n/8 M. Abadi et al., "Ten-sor-Flow: Large-Scale Ma-chine Learn-ing
  []
 
 [8]
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:821: Missing $ inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:848: Missing $ inserted.
 <inserted text> 
                 $
-l.821 ...l em: https://en.wikipedia.org/wiki/Data_
+l.848 ...l em: https://en.wikipedia.org/wiki/Data_
                                                   mining.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:822: LaTeX Error: Command \item invalid in math mode.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:849: LaTeX Error: Command \item invalid in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.822     \bibitem{Zaki2023}
+l.849     \bibitem{Zaki2023}
                              M. J. Zaki, "DATA MINING AND MACHINE LEARNING -...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:822: LaTeX Error: Something's wrong--perhaps a missing \item.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:849: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.822     \bibitem{Zaki2023}
+l.849     \bibitem{Zaki2023}
                              M. J. Zaki, "DATA MINING AND MACHINE LEARNING -...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:822: LaTeX Error: Something's wrong--perhaps a missing \item.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:849: LaTeX Error: Something's wrong--perhaps a missing \item.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.822     \bibitem{Zaki2023}
+l.849     \bibitem{Zaki2023}
                              M. J. Zaki, "DATA MINING AND MACHINE LEARNING -...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:822: Misplaced alignment tab character &.
-l.822 ...E LEARNING - Cambridge University Press &
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:849: Misplaced alignment tab character &.
+l.849 ...E LEARNING - Cambridge University Press &
                                                    Assessment", 2023. [Onlin...
 I can't figure out why you would want to use a tab mark
 here. If you just want an ampersand, the remedy is
@@ -713,20 +1192,20 @@ you're probably due for more error messages, and you
 might try typing `S' now just to see what is salvageable.
 
 
-LaTeX Warning: Command \' invalid in math mode on input line 822.
+LaTeX Warning: Command \' invalid in math mode on input line 849.
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:822: Please use \mathaccent for accents in math mode.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:849: Please use \mathaccent for accents in math mode.
 \add@accent ... \let \ignorespaces \relax \accent 
                                                   #1 #2\egroup \ifmmode \els...
-l.822 ...[Online; accessed 7-April-2024]. Disponí
+l.849 ...[Online; accessed 7-April-2024]. Disponí
                                                   vel em: https://www.cambri...
 I'm changing \accent to \mathaccent here; wish me luck.
 (Accents are not the same in formulas as they are in text.)
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:822: Missing { inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:849: Missing { inserted.
 <to be read again> 
                    \begingroup 
-l.822 ...[Online; accessed 7-April-2024]. Disponí
+l.849 ...[Online; accessed 7-April-2024]. Disponí
                                                   vel em: https://www.cambri...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -734,32 +1213,32 @@ so that I will find a matching right brace soon.
 (If you're confused by all this, try typing `I}' now.)
 
 
-LaTeX Warning: Command \i invalid in math mode on input line 822.
+LaTeX Warning: Command \i invalid in math mode on input line 849.
 
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:823: LaTeX Error: Command \item invalid in math mode.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:850: LaTeX Error: Command \item invalid in math mode.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.823     \bibitem{Statista2023}
+l.850     \bibitem{Statista2023}
                                  "Smartphone market shares by vendor 2009-20...
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:823: Missing $ inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:850: Missing $ inserted.
 <inserted text> 
                 $
-l.823     \bibitem{Statista2023}
+l.850     \bibitem{Statista2023}
                                  "Smartphone market shares by vendor 2009-20...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:823: Missing } inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:850: Missing } inserted.
 <inserted text> 
                 }
-l.823     \bibitem{Statista2023}
+l.850     \bibitem{Statista2023}
                                  "Smartphone market shares by vendor 2009-20...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -767,10 +1246,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:823: Missing } inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:850: Missing } inserted.
 <inserted text> 
                 }
-l.823     \bibitem{Statista2023}
+l.850     \bibitem{Statista2023}
                                  "Smartphone market shares by vendor 2009-20...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -779,34 +1258,34 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--823
+Underfull \hbox (badness 10000) in paragraph at lines 848--850
 []\OT1/ptm/m/n/8 "Data min-ing", Wikipedia, The Free En-cy-clo-pe-dia,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 821--823
+Underfull \hbox (badness 10000) in paragraph at lines 848--850
 \OT1/ptm/m/n/8 2023. [On-line; ac-cessed 7-April-2024]. Dispon[]^^Pvel em:
  []
 
 
-Overfull \hbox (142.84534pt too wide) in paragraph at lines 821--823
+Overfull \hbox (142.84534pt too wide) in paragraph at lines 848--850
 \OT1/ptm/m/n/8 https://en.wikipedia.org/wiki/Data$[]\OML/cmm/m/it/8 ining:M:J:Zaki; \OT1/cmr/m/n/8 "\OML/cmm/m/it/8 DATAMININGANDMACHINELEARNING \OMS/cmsy/m/n/8 ^^@
  []
 
 
-Overfull \hbox (20.73776pt too wide) in paragraph at lines 821--823
+Overfull \hbox (20.73776pt too wide) in paragraph at lines 848--850
 \OML/cmm/m/it/8 CambridgeUniversityPressAssessment\OT1/cmr/m/n/8 "\OML/cmm/m/it/8 ; \OT1/cmr/m/n/8 2023\OML/cmm/m/it/8 :\OT1/cmr/m/n/8 [\OML/cmm/m/it/8 Online\OT1/cmr/m/n/8 ; \OML/cmm/m/it/8 accessed\OT1/cmr/m/n/8 7 \OMS/cmsy/m/n/8 ^^@
  []
 
 
-Overfull \hbox (827.74394pt too wide) in paragraph at lines 821--823
+Overfull \hbox (827.74394pt too wide) in paragraph at lines 848--850
 \OML/cmm/m/it/8 April \OMS/cmsy/m/n/8 ^^@ \OT1/cmr/m/n/8 2024]\OML/cmm/m/it/8 :Dispon[]$ 
  []
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:823: Extra }, or forgotten \endgroup.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:850: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.823     \bibitem{Statista2023}
+l.850     \bibitem{Statista2023}
                                  "Smartphone market shares by vendor 2009-20...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -815,40 +1294,40 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
 []\OT1/ptm/m/n/8 "Smartphone mar-ket shares by ven-dor 2009-2023", Statista,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
 \OT1/ptm/m/n/8 2023. [On-line; ac-cessed 7-April-2024]. Dispon[]^^Pvel em:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 823--824
+Underfull \hbox (badness 10000) in paragraph at lines 850--851
 \OT1/ptm/m/n/8 https://www.statista.com/statistics/271496/global-market-share-held-by-
  []
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:824: Missing $ inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:851: Missing $ inserted.
 <inserted text> 
                 $
-l.824 ...tps://scikit-learn.org/stable/supervised_
+l.851 ...tps://scikit-learn.org/stable/supervised_
                                                   learning.html.
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:825: Missing $ inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:852: Missing $ inserted.
 <inserted text> 
                 $
-l.825 
+l.852 
       
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:825: Missing } inserted.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:852: Missing } inserted.
 <inserted text> 
                 }
-l.825 
+l.852 
       
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -857,14 +1336,14 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Underfull \hbox (badness 3189) in paragraph at lines 824--825
+Underfull \hbox (badness 3189) in paragraph at lines 851--852
 []\OT1/ptm/m/n/8 "1. Su-per-vised learn-ing | scikit-learn 1.4.1 doc-u-men-ta-tion", Scikit-
  []
 
-c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:825: Extra }, or forgotten \endgroup.
+c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex:852: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.825 
+l.852 
       
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -899,17 +1378,17 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4307 strings out of 474824
- 67885 string characters out of 5750978
+ 4308 strings out of 474824
+ 67891 string characters out of 5750978
  1951043 words of memory out of 5000000
- 26219 multiletter control sequences out of 15000+600000
+ 26220 multiletter control sequences out of 15000+600000
  598898 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  57i,11n,65p,723b,334s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on conference_101719.pdf (9 pages, 484649 bytes).
+<C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on conference_101719.pdf (9 pages, 528266 bytes).
 PDF statistics:
- 87 PDF objects out of 1000 (max. 8388607)
+ 102 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

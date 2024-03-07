@@ -85,6 +85,33 @@ Este estudo tem como objetivo explorar a aplicação de técnicas de mineração
 \section{Metodologia}
 
 
+As features (ou características) da base de dados carregada são as seguintes:
+
+    battery_power: Potência da bateria do dispositivo (provavelmente em mAh).
+    blue: Disponibilidade de Bluetooth (0 ou 1, indicando ausência ou presença, respectivamente).
+    clock_speed: Velocidade de relógio do processador do dispositivo (provavelmente em GHz).
+    dual_sim: Suporte a dual SIM (0 ou 1).
+    fc: Megapixels da câmera frontal.
+    four_g: Disponibilidade de 4G (0 ou 1).
+    int_memory: Memória interna do dispositivo (provavelmente em GB).
+    m_dep: Profundidade do dispositivo móvel em cm.
+    mobile_wt: Peso do dispositivo móvel (em gramas).
+    n_cores: Número de cores do processador.
+    pc: Megapixels da câmera principal (traseira).
+    px_height: Altura da resolução de pixel da tela.
+    px_width: Largura da resolução de pixel da tela.
+    ram: Memória RAM do dispositivo (provavelmente em MB ou GB).
+    sc_h: Altura da tela do dispositivo em cm.
+    sc_w: Largura da tela do dispositivo em cm.
+    talk_time: Tempo máximo de conversação em uma única carga de bateria (provavelmente em horas).
+    three_g: Disponibilidade de 3G (0 ou 1).
+    touch_screen: Presença de tela sensível ao toque (0 ou 1).
+    wifi: Disponibilidade de WiFi (0 ou 1).
+
+Além dessas features, a base de dados também inclui a coluna price_range, que parece ser a variável alvo (target), indicando a faixa de preço do dispositivo. Essa base de dados é provavelmente usada para modelar a relação entre as características técnicas de um telefone celular e seu preço de mercado. ​
+​
+
+
 % 2. Revisão Bibliográfica
 
 %     Conceitos fundamentais de Inteligência Artificial.
