@@ -11,9 +11,9 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Processamento de Linguagem Natural 
+\title{Mineração de Dados 
 
-Aplicado a ChatBot's Assistivos\\
+Aplicação de Mineração de Dados na Classificação de Preços de Celulares\\
 % {\footnotesize \textsuperscript{*}Note: Sub-titles are not captured in Xplore and
 % should not be used}
 }
@@ -46,97 +46,43 @@ highlighting the transformative potential of this technology in various sectors 
 Assistive Chatbot, Natural Language Processing, Machine Learning, Neural Networks, Accessibility, Artificial Intelligence
 \end{IEEEkeywords}
 
-% 1. Introdução
+% Introdução:
 
-%     Contextualização da Inteligência Artificial (IA) e sua importância.
-%     Apresentação do tema específico: Processamento de Linguagem Natural (PLN) e seu papel em chatbots assistivos.
-%     Justificativa da escolha do tema.
-%     Objetivos do artigo.
+%     Contextualização breve da importância da mineração de dados no mercado de celulares.
+%     Objetivos do estudo.
 
-% 2. Revisão Bibliográfica
+% Metodologia:
 
-%     Conceitos fundamentais de Inteligência Artificial.
-%     Discussão sobre o desenvolvimento histórico do Processamento de Linguagem Natural.
-%     Exploração de aplicações de chatbots assistivos em diferentes contextos.
-%     Revisão de estudos e pesquisas relevantes na área.
+%     Descrição resumida do conjunto de dados de celulares e dos métodos de mineração de dados utilizados na classificação.
 
-% 3. Fundamentação Teórica
+% Resultados:
 
-%     Detalhamento dos conceitos-chave de Processamento de Linguagem Natural.
-%     Explicação de técnicas e algoritmos comumente utilizados em PLN.
-%     Discussão sobre os desafios e avanços na área de PLN aplicada a chatbots assistivos.
+%     Apresentação dos principais resultados obtidos pela aplicação dos métodos de classificação.
 
-% 4. Metodologia
+% Discussão:
 
-%     Descrição dos métodos utilizados para coleta de dados, se aplicável.
-%     Detalhes sobre as ferramentas e tecnologias empregadas na implementação do chatbot assistivo.
-%     Explicação das métricas ou critérios de avaliação utilizados.
+%     Interpretação dos resultados.
+%     Comparação breve com outros estudos ou dados relevantes.
 
-% 5. Desenvolvimento do Chatbot Assistivo
+% Conclusão:
 
-%     Apresentação da arquitetura do chatbot.
-%     Elucidação dos temas sobre inteligência artificial e processamento de linguagem natural 
-%     relacionados ao chatbot assistivo.
-%     Descrição das funcionalidades específicas voltadas para assistência em contextos diversos.
-%     Exemplos de interações do chatbot em situações práticas.
+%     Resumo dos achados.
+%     Implicações práticas dos resultados.
+%     Sugestões para futuras pesquisas.
 
-% 6. Resultados e Discussão
+% Referências:
 
-%     Apresentação dos resultados obtidos na implementação do chatbot assistivo.
-%     Discussão crítica dos resultados em relação aos objetivos propostos.
-%     Comparação com outros estudos relacionados.
-
-% 7. Desafios e Futuras Perspectivas
-
-%     Identificação de desafios encontrados durante o desenvolvimento.
-%     Sugestões para melhorias e otimizações no chatbot assistivo.
-%     Exploração de possíveis direções futuras de pesquisa na área.
-
-% 8. Conclusão
-
-%     Recapitulação dos principais pontos discutidos.
-%     Conclusões gerais derivadas do estudo.
-%     Implicações práticas e contribuições para a área de Inteligência Artificial.
-
-% 9. Referências
-
-%     Listagem de todas as fontes consultadas e citadas no artigo, seguindo as normas de citação acadêmica.
-
-
-% 1. Introdução
-
-%     Contextualização da Inteligência Artificial (IA) e sua importância.
-%     Apresentação do tema específico: Processamento de Linguagem Natural (PLN) e seu papel em chatbots assistivos.
-%     Justificativa da escolha do tema.
-%     Objetivos do artigo.
+%     Lista de todas as fontes acadêmicas citadas no artigo.
 
 \section{Introdução}
-A Inteligência Artificial (IA) é uma área de constante inovação, afetando diversas esferas da 
-vida moderna, desde a medicina até a educação e o entretenimento \cite{Russell2016}. 
-Uma subárea particularmente influente é o Processamento de Linguagem Natural (PLN), que 
-oferece oportunidades significativas para aprimorar 
-a interação entre humanos e máquinas \cite{Jurafsky2020}. 
-Este artigo foca na aplicação de PLN em chatbots assistivos, ferramentas emergentes que 
-prometem avanços consideráveis na assistência e autonomia de usuários \cite{McTear2016}.
 
-O interesse neste tema surge da necessidade de tecnologias assistivas que apoiam a independência 
-de pessoas com diferentes capacidades \cite{Goggin2003}. Os chatbots assistivos, 
-impulsionados pelo PLN, desempenham um papel crucial na comunicação e acesso à informação, 
-tornando-se um campo promissor para pesquisa e desenvolvimento \cite{Laranjo2018}.
+A mineração de dados, uma área de pesquisa e aplicação que tem experimentado um crescimento exponencial em importância e relevância nos últimos anos, tem se mostrado crucial em uma variedade de contextos, desde a pesquisa científica até a tomada de decisões empresariais \cite{WikipediaDataMining}. A capacidade de coletar, processar e analisar grandes volumes de dados para extrair informações valiosas e insights significativos é uma habilidade fundamental na era digital \cite{Zaki2023}.
 
-Este artigo visa, primeiramente, apresentar um panorama sobre IA e PLN. 
-Em seguida, analisa como o PLN pode otimizar chatbots assistivos, destacando a relevância 
-atual dessa tecnologia. 
-A pesquisa também inclui o desenvolvimento de um chatbot assistivo para módulos de um 
-site hospitalar, utilizando Redes Neurais Profundas (DNNs) para classificar intenções 
-com base em padrões de entrada. Este desafio é abordado com aprendizado superviswionado, 
-enfatizando a aplicação de PLN e algoritmos para 
-classificação multiclasse \cite{Goodfellow2016, Bengio2017}.
+No mercado de celulares, a mineração de dados tem sido particularmente relevante. A quantidade de informações disponíveis sobre os dispositivos móveis e suas características é vasta e diversificada \cite{Statista2023}. A classificação de preços de celulares é uma aplicação prática da mineração de dados que pode fornecer insights valiosos para consumidores, fabricantes e vendedores, ajudando a entender as tendências do mercado e as preferências dos usuários \cite{Russell2016}.
 
-Ao explorar a intersecção entre IA, PLN e chatbots assistivos, 
-o artigo busca contribuir para uma compreensão mais aprofundada dessas tecnologias, 
-além de incentivar o desenvolvimento de soluções inovadoras e inclusivas.
+Este estudo tem como objetivo explorar a aplicação de técnicas de mineração de dados na classificação de preços de celulares, utilizando um conjunto de dados de celulares disponível publicamente. A metodologia empregada envolve a análise e processamento dos dados, a aplicação de algoritmos de classificação e a avaliação dos resultados obtidos \cite{ScikitLearn2023}. Os principais resultados e insights obtidos serão discutidos em detalhes, com implicações práticas e sugestões para futuras pesquisas \cite{Jurafsky2020}.
 
+\section{Metodologia}
 
 
 % 2. Revisão Bibliográfica
@@ -867,6 +813,16 @@ levar a uma maior eficiência e inclusão \cite{McTear2016}.
     \bibitem{Devlin2019} J. Devlin, M. Chang, K. Lee, and K. Toutanova, "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding", in Proceedings of the 2019 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, vol. 1, pp. 4171-4186, 2019.
     \bibitem{Hastie2009} T. Hastie, R. Tibshirani, and J. Friedman, "The Elements of Statistical Learning", 2nd ed., Springer, 2009.
     \bibitem{Picard2000} R. W. Picard, "Affective Computing", MIT Press, 2000.
+
+
+
+    \bibitem{Russell2016} S. J. Russell and P. Norvig, "Artificial intelligence: a modern approach", Malaysia: Pearson Education Limited, 2016.
+    \bibitem{Jurafsky2020} D. Jurafsky and J. H. Martin, "Speech and Language Processing", Cambridge: Cambridge University Press, 2019.
+    \bibitem{WikipediaDataMining} "Data mining", Wikipedia, The Free Encyclopedia, 2023. [Online; accessed 7-April-2024]. Disponível em: https://en.wikipedia.org/wiki/Data_mining.
+    \bibitem{Zaki2023} M. J. Zaki, "DATA MINING AND MACHINE LEARNING - Cambridge University Press & Assessment", 2023. [Online; accessed 7-April-2024]. Disponível em: https://www.cambridge.org/us/universitypress/subjects/computer-science/knowledge-management-databases-and-data-mining/data-mining-and-machine-learning-fundamental-concepts-and-algorithms-2nd-edition.
+    \bibitem{Statista2023} "Smartphone market shares by vendor 2009-2023", Statista, 2023. [Online; accessed 7-April-2024]. Disponível em: https://www.statista.com/statistics/271496/global-market-share-held-by-smartphone-vendors-since-4th-quarter-2009/.
+    \bibitem{ScikitLearn2023} "1. Supervised learning — scikit-learn 1.4.1 documentation", Scikit-Learn, 2023. [Online; accessed 7-April-2024]. Disponível em: https://scikit-learn.org/stable/supervised_learning.html.
+
     
 \end{thebibliography}
 
