@@ -7,6 +7,15 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  breaklines=true,
+  frame=single
+}
+
+
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -43,7 +52,7 @@ highlighting the transformative potential of this technology in various sectors 
 \end{abstract}
 
 \begin{IEEEkeywords}
-Assistive Chatbot, Natural Language Processing, Machine Learning, Neural Networks, Accessibility, Artificial Intelligence
+Mineração de Dados, Classificação de Preços, Celulares, Inteligência Artificial, Aprendizado de Máquina
 \end{IEEEkeywords}
 
 % Introdução:
@@ -73,6 +82,10 @@ Assistive Chatbot, Natural Language Processing, Machine Learning, Neural Network
 % Referências:
 
 %     Lista de todas as fontes acadêmicas citadas no artigo.
+
+% \section{Introdução}
+% Introduza aqui o contexto da mineração de dados no mercado de celulares e os objetivos do estudo.
+
 
 \section{Introdução}
 
@@ -106,66 +119,498 @@ com implicações práticas e sugestões para futuras pesquisas \cite{Jurafsky20
 
 \section{Metodologia}
 
+% Descreva o conjunto de dados de celulares e os métodos de mineração de dados utilizados na classificação. 
+% Inclua discussões sobre limpeza de dados, normalização e características específicas.
+Neste estudo, utilizamos um conjunto de dados composto por diversas características 
+de celulares para classificar seus preços em diferentes faixas. 
+Os dados foram divididos em conjuntos de treinamento e teste para validar a 
+eficácia dos modelos de classificação. 
+Descreveremos a seguir os principais aspectos da nossa metodologia, 
+incluindo pré-processamento de dados, 
+descrição das características 
+e abordagens de classificação.
 
-As features (ou características) da base de dados carregada são as seguintes:
+\subsection{Conjunto de Dados}
 
-    battery_power: Potência da bateria do dispositivo (provavelmente em mAh).
-    blue: Disponibilidade de Bluetooth (0 ou 1, indicando ausência ou presença, respectivamente).
-    clock_speed: Velocidade de relógio do processador do dispositivo (provavelmente em GHz).
-    dual_sim: Suporte a dual SIM (0 ou 1).
-    fc: Megapixels da câmera frontal.
-    four_g: Disponibilidade de 4G (0 ou 1).
-    int_memory: Memória interna do dispositivo (provavelmente em GB).
-    m_dep: Profundidade do dispositivo móvel em cm.
-    mobile_wt: Peso do dispositivo móvel (em gramas).
-    n_cores: Número de cores do processador.
-    pc: Megapixels da câmera principal (traseira).
-    px_height: Altura da resolução de pixel da tela.
-    px_width: Largura da resolução de pixel da tela.
-    ram: Memória RAM do dispositivo (provavelmente em MB ou GB).
-    sc_h: Altura da tela do dispositivo em cm.
-    sc_w: Largura da tela do dispositivo em cm.
-    talk_time: Tempo máximo de conversação em uma única carga de bateria (provavelmente em horas).
-    three_g: Disponibilidade de 3G (0 ou 1).
-    touch_screen: Presença de tela sensível ao toque (0 ou 1).
-    wifi: Disponibilidade de WiFi (0 ou 1).
+O conjunto de dados consiste em informações sobre várias características de telefones celulares. 
+Cada registro no conjunto de dados representa um celular com especificações técnicas 
+e uma variável alvo, `price\_range`, que indica a faixa de preço do dispositivo. 
+Este estudo se concentra na aplicação de métodos de mineração de dados para prever 
+esta variável alvo. As features (ou características) da 
+base de dados carregada são as seguintes:
 
-Além dessas features, a base de dados também inclui a coluna price_range, que parece ser a variável alvo (target), indicando a faixa de preço do dispositivo. Essa base de dados é provavelmente usada para modelar a relação entre as características técnicas de um telefone celular e seu preço de mercado. ​
-​
+\begin{itemize}
+    \item {\textbf{battery\_power:}} 
+    Potência da bateria do dispositivo (provavelmente em mAh).
+    \item {\textbf{blue:}}
+    Disponibilidade de Bluetooth (0 ou 1, indicando ausência ou presença, respectivamente).
+    \item {\textbf{clock\_speed:}}
+    Velocidade de relógio do processador do dispositivo (provavelmente em GHz).
+    \item {\textbf{dual\_sim:}}
+    Suporte a dual SIM (0 ou 1).
+    \item {\textbf{fc:}}
+    Megapixels da câmera frontal.
+    \item {\textbf{four\_g:}}
+    Disponibilidade de 4G (0 ou 1).
+    \item {\textbf{int\_memory:}}
+    Memória interna do dispositivo (provavelmente em GB).
+    \item {\textbf{m\_dep:}}
+    Profundidade do dispositivo móvel em cm.
+    \item {\textbf{mobile\_wt:}}
+    Peso do dispositivo móvel (em gramas).
+    \item {\textbf{n\_cores:}}
+    Número de cores do processador.
+    \item {\textbf{pc:}}
+    Megapixels da câmera principal (traseira).
+    \item {\textbf{px\_height:}}
+    Altura da resolução de pixel da tela.
+    \item {\textbf{px\_width:}}
+    Largura da resolução de pixel da tela.
+    \item {\textbf{ram:}}
+    Memória RAM do dispositivo (provavelmente em MB ou GB).
+    \item {\textbf{sc\_h:}}
+    Altura da tela do dispositivo em cm.
+    \item {\textbf{sc\_w:}}
+    Largura da tela do dispositivo em cm.
+    \item {\textbf{talk\_time:}}
+    Tempo máximo de conversação em uma única carga de bateria (provavelmente em horas).
+    \item {\textbf{three\_g:}}
+    Disponibilidade de 3G (0 ou 1).
+    \item {\textbf{touch\_screen:}}
+    Presença de tela sensível ao toque (0 ou 1).
+    \item {\textbf{wifi:}}
+    Disponibilidade de WiFi (0 ou 1).
+\end{itemize}
+
+Além dessas features, a base de dados também inclui a coluna 
+price\_range, que é a variável alvo (target), 
+indicando a faixa de preço do dispositivo. 
+Essa base de dados é usada para modelar a relação entre 
+as características técnicas de um telefone celular 
+e seu preço de mercado. ​
+
+\subsection{Pré-processamento de Dados}
+O pré-processamento dos dados é uma etapa crucial para garantir a qualidade 
+e a precisão dos modelos de classificação. 
+
+Em seguida, procedemos à normalização dos dados para garantir que as diferentes 
+escalas das variáveis não influenciassem indevidamente os resultados dos modelos.
+
+O pré-processamento dos dados foi realizado utilizando o Python, 
+com bibliotecas como Pandas e NumPy. 
+A primeira etapa envolveu a limpeza dos dados para remover inconsistências 
+e valores ausentes.
+
+\subsubsection{Limpeza de Dados}
+Inicialmente, realizamos uma análise exploratória para identificar 
+e tratar valores ausentes, 
+corrigir inconsistências e remover possíveis outliers. 
+Os comandos a seguir ilustram algumas das operações realizadas:
+
+\begin{lstlisting}[language=Python]
+import pandas as pd
+
+# Faz a leitura dos arquivos
+df_train = pd.read_csv('train.csv')
+df_test = pd.read_csv('test.csv')
+
+# Concatena os dois dataframes de treino e teste
+df_concat = pd.concat([df_train, df_test])
+
+# Remove a coluna 'ID' 
+df_concat.drop('id', axis=1, inplace=True)
+
+# Remove as linhas com valores NaN
+df_concat.dropna(inplace=True)
+
+# Mostra as 15 primeiras linhas do dataframe concatenado
+df_concat.head(15) 
+
+# Salvar o dataframe concatenado em um arquivo csv
+df_concat.to_csv('concatenado.csv', index=False)
+
+# Mostra as informações do dataframe concatenado
+df_concat.info()
+
+# Mostra a descrição do dataframe concatenado
+df_concat.describe()
+
+# Quantidade de linhas e colunas
+print(df_concat.shape)
+\end{lstlisting}
+
+Usamos o notebook `data\_cleaning.ipynb` para realizar a limpeza dos dados. 
+Os comandos a seguir foram encapsulados numa função chamada `clear\_df`:
+
+% pular linha
+\\
+\vspace{5mm}
+
+
+\begin{lstlisting}[language=Python]
+def clear_df(df, output_name):
+    # Remove a coluna 'ID' 
+    df.drop('id', axis=1, inplace=True)
+
+    # Remove as linhas com valores NaN
+    df.dropna(inplace=True)
+
+    # Salvar o dataframe em um arquivo csv
+    df.to_csv(output_name, index=False)
+
+    return df
+\end{lstlisting}
+
+Após a limpeza, 
+o próximo passo foi a normalização dos dados 
+que simplifica a comparação entre diferentes variáveis,
+ajuando a evitar que variáveis com escalas diferentes
+tenham pesos desproporcionais nos modelos de classificação.
+
+\subsubsection{Normalização dos Dados}
+
+No notebook `data\_normalization.ipynb`, normalizamos as variáveis numéricas 
+para garantir uma escala uniforme, 
+crucial para muitos algoritmos de aprendizado de máquina.
+Inicialmente, fizemos a leitura e divisão dos dados em features e target:
+\begin{lstlisting}[language=Python]
+import pandas as pd
+
+input_file = 'train.csv'
+
+features = ['battery_power', 'blue', 'clock_speed', 'dual_sim', 'fc', 'four_g', 'int_memory', 'm_dep', 'mobile_wt', 'n_cores', 'pc', 'px_height', 'px_width', 'ram', 'sc_h', 'sc_w', 'talk_time', 'three_g', 'touch_screen', 'wifi']
+
+target = 'price_range'
+
+df = pd.read_csv(input_file)
+
+# Separating out the features
+x = df.loc[:, features].values
+
+# Separating out the target
+y = df.loc[:,[target]].values
+\end{lstlisting}
+
+Em seguida, utilizamos a biblioteca scikit-learn para realizar a normalização dos dados de duas formas:
+
+\begin{itemize}
+    \item {\textbf{MinMaxScaler:}}
+    Redimensiona os dados para um intervalo específico, 
+    geralmente entre 0 e 1.
+
+    \begin{lstlisting}[language=Python]
+from sklearn.preprocessing import MinMaxScaler
+
+# Min-Max normalization
+x_minmax = MinMaxScaler().fit_transform(x)
+normalized_minmax = pd.DataFrame(x_minmax, columns = features)
+normalized_minmax = pd.concat([normalized_minmax, df[[target]]], axis = 1)
+normalized_minmax.describe()
+    \end{lstlisting}
+
+    \item {\textbf{StandardScaler ou Z-Score:}}
+    Padroniza os dados para ter média zero e variância unitária.
+
+    \begin{lstlisting}[language=Python]
+from sklearn.preprocessing import StandardScaler
+
+# Z-Score normalization
+x_zscore = StandardScaler().fit_transform(x)
+normalized_zscore = pd.DataFrame(x_zscore, columns = features)
+normalized_zscore = pd.concat([normalized_zscore, df[[target]]], axis = 1)
+normalized_zscore.describe()
+    \end{lstlisting}
+\end{itemize}
+
+% PCA e PCA3d
+\subsubsection{Análise de Componentes Principais (PCA)}
+
+Após a normalização dos dados, aplicamos a técnica de 
+Análise de Componentes Principais (PCA) para reduzir a 
+dimensionalidade do conjunto de dados. 
+A PCA nos permite concentrar nas direções que maximizam a variância, 
+o que pode ser útil tanto para visualização dos dados 
+quanto para melhorar o desempenho dos algoritmos de aprendizado de máquina.
+
+A Análise de Componentes Principais (PCA) é uma técnica estatística poderosa 
+utilizada para reduzir a dimensionalidade dos dados, transformando-os em um 
+conjunto de valores de menor dimensão conhecidos como componentes principais. 
+Esta técnica é particularmente útil em conjuntos de dados com muitas variáveis, 
+como é o caso do nosso conjunto de dados de características de celulares. 
+
+Ao aplicar a PCA, estamos buscando as direções (componentes principais) que maximizam 
+a variância nos dados. Em termos práticos, isso significa que estamos tentando 
+encontrar as combinações lineares das variáveis originais que capturam a maior 
+quantidade de informação possível. Essa redução de dimensionalidade é útil para:
+
+\begin{itemize}
+    \item \textbf{Visualização dos Dados:} 
+    Com muitas variáveis, é difícil visualizar e detectar padrões nos dados. 
+    Reduzindo para duas ou três dimensões principais, 
+    podemos plotar os dados de forma que 
+    relações significativas se tornem mais evidentes.
+
+    \item \textbf{Eficiência Computacional:} 
+    Menos dimensões significam menos cálculos, o que pode acelerar 
+    algoritmos de aprendizado de máquina, especialmente em grandes conjuntos de dados.
+
+    \item \textbf{Redução de Ruído:} Ao focar nas direções que maximizam a variância, 
+    a PCA pode ajudar a filtrar "ruído" ou variações que são menos informativas 
+    para a análise.
+\end{itemize}
+
+Para o nosso conjunto de dados, a aplicação da PCA pode revelar 
+quais características dos celulares têm mais impacto na variação dos preços. 
+Por exemplo, se a primeira componente principal for fortemente influenciada 
+por características como `ram` e `battery\_power`, 
+isso sugere que estas características são significativas na determinação 
+do preço do celular.
+
+No mesmo notebook da normalização dos dados, 
+implementamos a PCA utilizando a biblioteca scikit-learn e 
+matplotlib para visualização dos resultados.
+
+Foram criadas duas funções que aplicam a PCA com dois componentes (visualização 2d) 
+e três componentes (visualização 3d), respectivamente:
+
+\begin{lstlisting}[language=Python]
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+
+def VisualizePcaProjection(finalDf, targetColumn):
+    fig = plt.figure(figsize = (20,12))
+    ax = fig.add_subplot(1,1,1) 
+    ax.set_xlabel('Principal Component 1', fontsize = 15)
+    ax.set_ylabel('Principal Component 2', fontsize = 15)
+    ax.set_title('4 component PCA', fontsize = 20)
+    targets = [0, 1, 2, 3]
+    colors = ['r', 'g', 'b', 'y']
+    for target, color in zip(targets,colors):
+        indicesToKeep = finalDf[targetColumn] == target
+        ax.scatter(finalDf.loc[indicesToKeep, 'principal component 1'],
+                   finalDf.loc[indicesToKeep, 'principal component 2'],
+                   c = color, s = 50)
+    ax.legend(targets)
+    ax.grid()
+    plt.show()
+
+pca = PCA()
+
+principalComponents = pca.fit_transform(x_zscore)
+
+principalDf = pd.DataFrame(data = principalComponents[:, 0:2], columns = ['principal component 1', 'principal component 2'])
+
+finalDf = pd.concat([principalDf, df[[target]]], axis = 1)
+
+VisualizePcaProjection(finalDf, target)
+\end{lstlisting}
+
+\begin{lstlisting}[language=Python]
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+
+def VisualizePca3dProjection(finalDf, targetColumn):
+    fig = plt.figure(figsize = (20,12))
+    ax = fig.add_subplot(111, projection='3d') 
+    ax.set_xlabel('Principal Component 1', fontsize = 15)
+    ax.set_ylabel('Principal Component 2', fontsize = 15)
+    ax.set_zlabel('Principal Component 3', fontsize = 15)
+    ax.set_title('4 component PCA', fontsize = 20)
+    targets = [0, 1, 2, 3]
+    colors = ['r', 'g', 'b', 'y']
+    for target, color in zip(targets,colors):
+        indicesToKeep = finalDf[targetColumn] == target
+        ax.scatter(finalDf.loc[indicesToKeep, 'principal component 1'],
+                   finalDf.loc[indicesToKeep, 'principal component 2'],
+                   finalDf.loc[indicesToKeep, 'principal component 3'],
+                   c = color, s = 50)
+    ax.legend(targets)
+    ax.grid()
+    plt.show()
+
+pca3d = PCA(n_components=3)
+
+principalComponents3d = pca3d.fit_transform(x_zscore)
+
+principalDf3d = pd.DataFrame(data = principalComponents3d, columns = ['principal component 1', 'principal component 2', 'principal component 3'])
+
+finalDf3d = pd.concat([principalDf3d, df[[target]]], axis = 1)
+
+VisualizePca3dProjection(finalDf3d, target)
+\end{lstlisting}
+
+A PCA forneceu insights valiosos, revelando quais características contribuem 
+mais para a variação nos dados e, consequentemente, para a determinação 
+das faixas de preço dos celulares. 
+Esta etapa foi essencial para simplificar os modelos de classificação, 
+ao mesmo tempo mantendo a maior parte da informação significativa contida 
+no conjunto original de dados.
+
+Os gráficos resultantes da PCA, especialmente as visualizações 2D e 3D, 
+podem nos mostrar como diferentes celulares estão agrupados com base em 
+suas características e faixas de preço, proporcionando insights valiosos 
+sobre o mercado de celulares e sobre quais especificações são mais valorizadas.
+
+\subsection{Exploração de Dados}
+
+Ainda no notebook `data\_normalization.ipynb`,
+exploramos os dados para identificar padrões e relações entre as variáveis.
+Utilizamos bibliotecas como Matplotlib e Seaborn para visualizar a distribuição
+das variáveis e a correlação entre elas.
+ 
+A correlação entre as variáveis é um aspecto importante a ser considerado
+na construção de modelos de classificação, pois variáveis altamente correlacionadas
+podem introduzir viés nos modelos. Ao plotarmos um mapa de calor da matriz de correlação,
+podemos identificar quais variáveis estão mais fortemente relacionadas.
+O código a seguir ilustra a geração de um mapa de calor da matriz de correlação.
+
+\begin{lstlisting}[language=Python]
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+plt.figure(figsize=(20, 12))
+sns.heatmap(normalized_minmax.corr(), annot=True, cmap='coolwarm', fmt='.2f', linewidths=2)
+plt.title('Correlation Matrix')
+plt.show()
+\end{lstlisting}
+
+\subsection{Modelagem e Classificação}#
+#TODO: Adicionar descrição da modelagem e classificação dos dados.
+
+% Após o pré-processamento, aplicamos diferentes algoritmos de aprendizado de máquina para classificar os preços dos celulares.
+
+\subsubsection{Aplicação de Modelos de Classificação}
+#TODO: Adicionar descrição da aplicação de modelos de classificação.
+% Usamos modelos como Árvores de Decisão, Random Forest e Redes Neurais, empregando bibliotecas como scikit-learn e TensorFlow.
+
+% \begin{verbatim}
+% from sklearn.tree import DecisionTreeClassifier
+% from sklearn.ensemble import RandomForestClassifier
+% from sklearn.model_selection import train_test_split
+% from sklearn.metrics import classification_report
+
+% # Dividir dados em treino e teste
+% X_train, X_test, y_train, y_test = train_test_split(
+%     data.drop('price_range', axis=1), 
+%     data['price_range'], test_size=0.2, random_state=42)
+
+% # Árvore de Decisão
+% tree_model = DecisionTreeClassifier()
+% tree_model.fit(X_train, y_train)
+
+% # Random Forest
+% rf_model = RandomForestClassifier()
+% rf_model.fit(X_train, y_train)
+
+% # Avaliação dos modelos
+% print(classification_report(y_test, tree_model.predict(X_test)))
+% print(classification_report(y_test, rf_model.predict(X_test)))
+% \end{verbatim}
+
+\subsubsection{Validação e Seleção do Modelo}
+#TODO: Adicionar descrição da validação e seleção do modelo.
+
+% Validamos os modelos utilizando técnicas como a validação cruzada e comparando métricas de desempenho, como acurácia e F1-score, para selecionar o modelo mais adequado.
+
+\subsection{Conclusões Preliminares}
+#TODO: Adicionar conclusões preliminares.
+% As análises iniciais indicam que características como `battery_power`, `ram` e `px_height` têm impacto significativo na classificação dos preços dos celulares. Os resultados detalhados serão discutidos na próxima seção.
+
+
+\subsection{Modelagem e Classificação}
+#TODO: Adicionar descrição da modelagem e classificação dos dados.
+% Após o pré-processamento, empregamos várias técnicas de mineração de dados para classificar os celulares em suas respectivas faixas de preço. Os métodos incluíram:
+
+% \begin{itemize}
+%     \item {\textbf{Árvores de Decisão:}} Utilizadas para criar modelos baseados em regras de decisão simples.
+%     \item {\textbf{Random Forest:}} Um método de ensemble que combina múltiplas árvores de decisão para melhorar a precisão.
+%     \item {\textbf{Redes Neurais:}} Modelos computacionais que imitam a estrutura do cérebro humano para realizar tarefas de classificação complexas.
+%     % Inclua quaisquer outros métodos utilizados aqui.
+% \end{itemize}
+
+% Utilizamos métricas como acurácia, precisão, recall e F1-score para avaliar o desempenho dos modelos. A seleção do modelo final foi baseada na melhor combinação de performance e capacidade de generalização para dados não vistos.
+
+\subsection{Validação do Modelo}
+#TODO: Adicionar descrição da validação do modelo.
+
+% Para validar a eficácia dos modelos, aplicamos técnicas de validação cruzada no conjunto de treinamento e testamos os modelos selecionados no conjunto de teste. Esta abordagem ajudou a garantir que os modelos eram robustos e confiáveis para previsões em novos dados.
+
+\section{Resultados}
+
+% Aqui você começará a seção de Resultados, descrevendo os achados do seu estudo.
 
 
 % 2. Revisão Bibliográfica
-
-%     Conceitos fundamentais de Inteligência Artificial.
-%     Discussão sobre o desenvolvimento histórico do Processamento de Linguagem Natural.
-%     Exploração de aplicações de chatbots assistivos em diferentes contextos.
-%     Revisão de estudos e pesquisas relevantes na área.
-
 \section{Revisão Bibliográfica}
+% Descreva os principais conceitos e técnicas de mineração de dados, aprendizado de máquina e redes neurais relevantes para o estudo.
 
-\subsection{Inteligência Artificial}
-A Inteligência Artificial (IA) representa um avanço significativo na capacidade 
-dos sistemas computacionais de emular funções cognitivas humanas, como 
-aprendizado, raciocínio, resolução de problemas, tomada de decisão 
-e compreensão da linguagem natural \cite{Russell2016}. 
-Além disso, a IA abrange áreas como visão computacional, robótica e 
-Processamento de Linguagem Natural (PLN), refletindo sua natureza interdisciplinar 
-que engloba Ciência da Computação, Matemática, Filosofia, Psicologia, 
-Neurociência, Linguística e Economia \cite{Poole2010}.
+\subsection{Mineração de Dados}
+A Mineração de Dados é uma disciplina interdisciplinar que combina técnicas de
+aprendizado de máquina, estatística, inteligência artificial e banco de dados para
+descobrir padrões e informações úteis em grandes conjuntos de dados.
+Essa disciplina é essencial para a análise de dados em diversas áreas, como
+negócios, ciência, saúde e governo, e tem sido amplamente utilizada para
+extrair insights valiosos e tomar decisões informadas \cite{Han2011}.
+A Mineração de Dados envolve várias etapas, incluindo a coleta e preparação de
+dados, a aplicação de algoritmos de aprendizado de máquina e a interpretação dos
+resultados obtidos. Esses processos são fundamentais para a análise e
+compreensão de grandes volumes de dados, permitindo a identificação de padrões
+e tendências que podem ser usados para prever eventos futuros e tomar decisões
+estratégicas \cite{Witten2011}.
+A Mineração de Dados é uma área em constante evolução, com o desenvolvimento de
+novas técnicas e algoritmos para lidar com conjuntos de dados cada vez maiores e
+mais complexos. A aplicação de técnicas de Mineração de Dados em áreas como
+comércio eletrônico, marketing, saúde e finanças tem sido fundamental para
+melhorar a eficiência e a eficácia das organizações, proporcionando insights
+valiosos e impulsionando a inovação \cite{Fayyad1996}.
+Neste estudo, aplicamos técnicas de Mineração de Dados para classificar os preços
+de celulares com base em suas características técnicas. Utilizamos um conjunto de
+dados de celulares que inclui informações como potência da bateria, memória RAM,
+resolução da tela e outras especificações técnicas. Através da aplicação de
+algoritmos de aprendizado de máquina, buscamos identificar padrões nos dados e
+prever a faixa de preço de cada celular com base nessas características.
 
-Dentro da IA, o aprendizado de máquina é uma subárea focada no desenvolvimento de 
-algoritmos que permitem que os sistemas aprendam e 
-façam previsões ou decisões baseadas em dados \cite{Alpaydin2020}. 
-O PLN, por outro lado, lida com a capacidade dos computadores para entender, 
-interpretar e gerar linguagem humana de forma significativa, 
-apresentando desafios e avanços notáveis \cite{Jurafsky2020}.
+\subsection{Aprendizado de Máquina}
+O Aprendizado de Máquina é uma subárea da inteligência artificial que se
+dedica ao desenvolvimento de algoritmos e técnicas que permitem aos sistemas
+computacionais aprender a partir de dados. Esses algoritmos são projetados para
+identificar padrões e relações nos dados, permitindo que os sistemas façam
+previsões ou tomem decisões com base nessas informações. O Aprendizado de
+Máquina é amplamente utilizado em uma variedade de aplicações, como reconhecimento
+de padrões, processamento de linguagem natural, visão computacional e
+otimização de sistemas \cite{Alpaydin2020}.
+Existem várias abordagens e técnicas de Aprendizado de Máquina, incluindo
+aprendizado supervisionado, aprendizado não supervisionado, aprendizado por
+reforço e aprendizado profundo. Cada uma dessas abordagens tem suas próprias
+características e aplicações, e a escolha do método mais adequado depende do
+problema específico a ser resolvido e dos dados disponíveis \cite{Bishop2006}.
+Neste estudo, aplicamos técnicas de Aprendizado de Máquina para classificar os
+preços de celulares com base em suas características técnicas. Utilizamos
+algoritmos de aprendizado supervisionado, como árvores de decisão e florestas
+aleatórias, para criar modelos de classificação que podem prever a faixa de preço
+de um celular com base em suas especificações. Esses modelos foram treinados e
 
-A IA tem visto um crescimento exponencial em sua aplicabilidade e complexidade, 
-impulsionada em grande parte pela disponibilidade de grandes volumes de dados e 
-pelo aumento do poder computacional \cite{Goodfellow2016}. 
-Este desenvolvimento tem permitido avanços em áreas como redes neurais profundas, 
-que são cruciais para tarefas de reconhecimento de padrões 
-e aprendizado não supervisionado \cite{LeCun2015}.
+\subsection{Redes Neurais}
+As Redes Neurais são modelos computacionais inspirados na estrutura e
+funcionamento do cérebro humano. Elas são compostas por camadas de neurônios
+artificiais interconectados que processam dados através de suas conexões
+sinápticas. As Redes Neurais são capazes de aprender a partir de dados e
+identificar padrões complexos e relações não lineares nos dados, tornando-as
+ideais para tarefas de classificação e previsão \cite{Haykin2009}.
+As Redes Neurais são amplamente utilizadas em aplicações de aprendizado de
+máquina, como reconhecimento de padrões, processamento de linguagem natural e
+visão computacional. Elas são particularmente eficazes em lidar com dados
+sequenciais e não estruturados, como texto, áudio e vídeo, e têm sido
+fundamentais para avanços significativos em áreas como reconhecimento de fala,
+tradução automática e diagnóstico médico \cite{LeCun2015}.
+Neste estudo, aplicamos Redes Neurais para classificar os preços de celulares com
+base em suas características técnicas. Utilizamos uma arquitetura de rede neural
+profunda para criar um modelo de classificação que pode prever a faixa de preço
+de um celular com base em suas especificações. Através do treinamento da rede
+neural em um conjunto de dados rotulado, buscamos identificar padrões nos dados e
+criar um modelo preciso e eficaz para classificar os celulares em diferentes
+faixas de preço.
+
 
 \subsubsection{Aprendizado de Máquina} 
 
@@ -269,166 +714,13 @@ Apesar de seu sucesso, desafios como a interpretabilidade dos modelos e
 a necessidade de grandes volumes de dados rotulados para treinamento 
 ainda são áreas de pesquisa ativa \cite{Zhang2018}.
 
+\section{Discussão}
 
+% Aqui você discutirá os resultados do seu estudo, comparando-os com a literatura existente e destacando as contribuições do seu trabalho.
 
-\subsubsection{Processamento de Linguagem Natural}
-O Processamento de Linguagem Natural (PLN) é um subcampo vital da Inteligência Artificial dedicado a 
-desenvolver sistemas que entendem e geram linguagem natural humana.
-A linguagem natural é complexa, ambígua e rica em contexto, apresentando desafios únicos para a computação. 
-Estudos em PLN focam principalmente em três aspectos fundamentais \cite{Manning2014}:
+\section{Conclusão}
 
-\begin{itemize}
-\item \textbf{Análise Sintática (Parsing):} Envolve a decomposição de estruturas gramaticais de sentenças para entender sua organização e relação entre palavras.
-\item \textbf{Análise Semântica:} Foca no significado das palavras e frases, considerando o contexto em que são usadas.
-\item \textbf{Análise de Discurso:} Examina o uso e interpretação da linguagem em conversas ou textos mais extensos.
-\end{itemize}
-
-Para o reconhecimento e sintetização de frases em linguagem natural, o PLN utiliza técnicas e algoritmos
-de aprendizado de máquina, existem duas abordagens principais para o reconhecimento e sintetização de frases:
-\begin{itemize}
-    \item {\textbf{Top-down:}}
-    A abordagem top-down envolve o uso de regras para analisar a estrutura gramatical de uma sentença. Este
-    processo pode ser representado como uma árvore de análise sintática (parse tree), que é uma representação
-    semelhante a uma árvore de busca em profundidade.
-
-    \begin{figure}[htbp]
-        \centerline{\includegraphics[scale=1]{parse_tree.png}}
-        \caption{Árvore de análise sintática}
-        \label{fig}
-    \end{figure}
-
-    \item {\textbf{Bottom-up:}}
-    A abordagem bottom-up envolve o uso de dados para analisar a estrutura gramatical de uma sentença. Este
-    processo pode ser representado como uma árvore de análise semântica (semantic tree), que é uma representação
-    semelhante a uma árvore de busca em largura.
-
-\end{itemize}
-
-O objetivo do PLN é capacitar computadores a compreenderem e responderem a linguagem natural de forma útil, 
-com aplicações variadas como as descritas a seguir \cite{Jurafsky2019}.
-
-\begin{itemize}
-    \item {\textbf{Tradução automática:}}
-    A tradução automática é o processo de traduzir um texto de um idioma para outro. 
-    \item {\textbf{Reconhecimento de fala:}}
-    O reconhecimento de fala é o processo de reconhecer a fala de um usuário e convertê-la em texto.
-    \item {\textbf{Geração de texto:}}
-    A geração de texto é o processo de gerar texto a partir de dados.
-    \item {\textbf{Compreensão de texto:}}
-    A compreensão de texto é o processo de compreender o significado de um texto dentro de um contexto.
-    \item {\textbf{Sumarização de texto:}}
-    A sumarização de texto é o processo de resumir um texto.
-    \item {\textbf{Extração de informações:}}
-    A extração de informações é o processo de extrair informações de um texto com base em um conjunto de regras.
-    \item {\textbf{Chatbots: Perguntas e respostas automatizadas}}
-    Os chatbots são sistemas computacionais que utilizam técnicas de PLN para interagir com usuários e prover assistência em diferentes contextos.
-\end{itemize}
-
-
-
-\subsubsection{Técnicas e Algoritmos de PLN}
-O campo do Processamento de Linguagem Natural (PLN) emprega uma gama diversa de 
-técnicas e algoritmos para interpretar e gerar linguagem humana de forma eficaz. 
-Dentre essas técnicas, a tokenização e a lematização são fundamentais para a 
-estruturação e análise de dados textuais.
-
-\textbf{Tokenização} refere-se ao processo de dividir um texto em unidades menores chamadas tokens, 
-que podem ser palavras, frases ou símbolos. 
-Esta técnica é o primeiro passo para transformar texto não estruturado em um formato 
-que máquinas possam processar e analisar \cite{Manning2014}.
-
-\textbf{Stemming} é o processo de reduzir palavras flexionadas (ou às vezes derivadas) ao seu
-radical, base ou raiz, geralmente uma forma de palavra escrita.
-
-\textbf{Lematização}, por outro lado, envolve a redução das palavras às suas formas base ou dicionário, 
-o que é conhecido como o lema da palavra. 
-É um processo mais complexo que o stemming, pois considera o contexto para 
-converter a palavra na sua forma canônica \cite{Bird2009}.
-
-Além dessas técnicas fundamentais, as redes neurais, como as \textbf{Redes Neurais Recorrentes (RNNs)} 
-e as \textbf{Redes Neurais Convolucionais (CNNs)}, são amplamente utilizadas para tarefas de PLN 
-como tradução automática e reconhecimento de fala, 
-onde a sequência e a hierarquia dos dados são críticas \cite{Goodfellow2016}.
-
-Recentemente, os \textbf{modelos de atenção}, particularmente o \textbf{Transformer}, 
-revolucionaram o PLN ao permitir que modelos aprendam onde focar em uma sequência de entrada, 
-resultando em melhorias significativas na compreensão de texto e geração de texto \cite{Vaswani2017}.
-
-Para o desenvolvimento prático dessas técnicas, a \textbf{biblioteca Natural Language Toolkit (NLTK)} é 
-uma ferramenta popular e poderosa que fornece acesso a algoritmos de tokenização, lematização, tagging, parsing 
-e outros recursos essenciais para o PLN \cite{Bird2009}.
-
-
-
-\subsection{Desafios e Avanços em PLN Aplicado a Chatbots Assistivos}
-Embora o PLN tenha avançado significativamente, desafios persistem na aplicação a chatbots assistivos. 
-Entender a intenção e o contexto do usuário, gerenciar a ambiguidade linguística e proporcionar 
-respostas relevantes são desafios notáveis \cite{McTear2016}. 
-Com o desenvolvimento contínuo do PLN, espera-se que a eficácia dos chatbots assistivos 
-em linguagem natural melhore substancialmente.
-
-
-
-\subsection{Chatbots Assistivos}
-Os chatbots assistivos representam uma aplicação prática revolucionária das técnicas de PLN, 
-proporcionando uma interação mais acessível e intuitiva entre humanos e máquinas. 
-Estes sistemas são projetados para fornecer assistência personalizada e podem ser 
-particularmente benéficos para indivíduos com necessidades especiais, permitindo-lhes 
-superar barreiras de comunicação e acesso à informação \cite{Laranjo2018}.
-
-A tecnologia por trás dos chatbots assistivos evoluiu significativamente com a 
-incorporação de modelos de PLN avançados, como o GPT-3 da OpenAI. 
-O GPT-3 demonstrou habilidades impressionantes, desde responder a perguntas complexas até 
-gerar textos coerentes e codificar programas, baseando-se em um vasto conjunto de dados 
-e aprendizado contínuo a partir das interações com os usuários \cite{Brown2020}.
-
-No entanto, esses sistemas não estão isentos de desafios. 
-Questões como o entendimento preciso do contexto, a geração de respostas éticas e 
-culturalmente sensíveis e a personalização do aprendizado automático para se adaptar 
-às preferências individuais dos usuários 
-permanecem como áreas de pesquisa ativa \cite{Henderson2019}.
-
-À medida que a tecnologia avança, os chatbots assistivos estão se tornando cada vez mais sofisticados, 
-com o potencial de se integrarem de forma transparente à vida cotidiana dos usuários, 
-oferecendo suporte e assistência em tempo real \cite{McTear2016}.
-
-
-\subsubsection{Aplicações de Chatbots Assistivos}
-Os chatbots assistivos demonstraram ser uma ferramenta valiosa em uma variedade de setores, 
-cada um com seus próprios desafios e oportunidades. 
-Na saúde, os chatbots são empregados para aumentar o envolvimento do paciente, fornecer triagem inicial 
-para sintomas e promover a adesão ao tratamento, 
-melhorando assim o gerenciamento do cuidado ao paciente \cite{Bickmore2018}. 
-Além disso, eles também atuam como assistentes virtuais para profissionais de saúde, 
-otimizando a organização do trabalho e reduzindo a carga administrativa \cite{Jiang2017}.
-
-No e-commerce, os chatbots revolucionaram a experiência do cliente ao fornecer suporte instantâneo, 
-recomendações personalizadas de produtos com base no histórico de compras e preferências, 
-e facilitando a jornada de compra do consumidor \cite{Dale2016}. 
-Eles também desempenham um papel crucial na gestão da cadeia de suprimentos e no suporte pós-venda, 
-agilizando processos e melhorando a satisfação do cliente \cite{VanPinxteren2020}.
-
-
-
-\subsubsection{Estudos Relevantes}
-A literatura sobre chatbots assistivos é rica e diversificada, refletindo a expansão do campo e 
-a variedade de aplicações em diferentes contextos. 
-Por exemplo, Laranjo et al. conduziram um estudo abrangente que aponta para a eficácia dos chatbots 
-na melhoria do autocuidado e na otimização dos resultados dos pacientes em cenários de saúde \cite{Laranjo2018}. 
-Pesquisas adicionais, como as de Bickmore e Picard, demonstraram como os chatbots podem fornecer 
-suporte emocional e assistência comportamental, destacando a importância da empatia e 
-do engajamento no design desses sistemas \cite{Bickmore2005}.
-
-Outro estudo de Knijnenburg e Willemsen sobre personalização em sistemas de recomendação enfatiza como os chatbots 
-podem ser adaptados para entender e atender às preferências individuais dos usuários, melhorando assim a experiência 
-do usuário e a satisfação \cite{Knijnenburg2016}. 
-Além disso, McTear et al. oferecem uma análise detalhada das interfaces conversacionais, 
-abordando as tendências atuais e futuras e como elas podem ser adaptadas 
-para proporcionar interações mais naturais e humanas \cite{McTear2016}.
-
-Estes estudos ilustram não apenas as possibilidades oferecidas pelos chatbots assistivos, 
-mas também os desafios contínuos na criação de sistemas que são 
-ao mesmo tempo técnicos e pessoalmente relevantes para os usuários.
+% Aqui você resumirá os achados do seu estudo e discutirá suas implicações práticas e sugestões para futuras pesquisas.
 
 
 
