@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1711606952 "c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1711606954 2
+["pdflatex"] 1711609631 "c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex" "conference_101719.pdf" "conference_101719" 1711609633 2
   "C:/Users/raulp/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1700792370 82705 9cc9f144eacd499bc23a611703921467 ""
   "C:/Users/raulp/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1709571202 24175183 d50396c491cce45c9c501590581ca7f3 ""
   "C:/Users/raulp/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
@@ -90,11 +90,14 @@
   "C:/Users/raulp/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1656236890 56148 51a9a8571c07b9921892ae11063ae853 ""
   "IEEEtran.cls" 1700512568 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
   "accuracy.png" 1702510011 25227 636fad9078cf6bda51031ea22b4c86f7 ""
-  "c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex" 1711606946 67221 a81398cbc4f1beefd7662969701b592a ""
+  "c:/Users/raulp/OneDrive - ifsp.edu.br/FACUL/9° Semestre/Mineração de Dados/mobile_price_classification/mobile_price_latex/conference_101719.tex" 1711609627 69747 d4ac47a382fad81ab36d1a94360213cd ""
   "chat.png" 1702509985 274644 77ea03dda6fa764d85e63ba059264803 ""
-  "conference_101719.aux" 1711606954 12136 c105273c24d4a39584b7b5d87cb92963 "pdflatex"
-  "conference_101719.tex" 1711606946 67221 a81398cbc4f1beefd7662969701b592a ""
+  "conference_101719.aux" 1711609633 13231 75d2e097698bf60f27836738c7114b07 "pdflatex"
+  "conference_101719.tex" 1711609627 69747 d4ac47a382fad81ab36d1a94360213cd ""
   "loss.png" 1702510003 22439 4d4ebca4d38b53c16e166d5296f8ee99 ""
+  "matrix_correlation.png" 1711608877 152952 46fb55f9cc147974f315850c872a663d ""
+  "xzscore-pca-2d.png" 1711608920 145431 8c7d3fee71852d1e0d3d8805fdfafe94 ""
+  "xzscore-pca-3d.png" 1711608953 241415 ca368037465560b932d1be7c3e2dd321 ""
   (generated)
   "conference_101719.aux"
   "conference_101719.log"

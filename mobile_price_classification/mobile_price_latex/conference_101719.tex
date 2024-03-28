@@ -474,13 +474,13 @@ plt.title('Correlation Matrix')
 plt.show()
 \end{lstlisting}
 
-\subsection{Modelagem e Classificação}#
-#TODO: Adicionar descrição da modelagem e classificação dos dados.
+\subsection{Modelagem e Classificação}
+TODO: Adicionar descrição da modelagem e classificação dos dados.
 
 % Após o pré-processamento, aplicamos diferentes algoritmos de aprendizado de máquina para classificar os preços dos celulares.
 
 \subsubsection{Aplicação de Modelos de Classificação}
-#TODO: Adicionar descrição da aplicação de modelos de classificação.
+TODO: Adicionar descrição da aplicação de modelos de classificação.
 % Usamos modelos como Árvores de Decisão, Random Forest e Redes Neurais, empregando bibliotecas como scikit-learn e TensorFlow.
 
 % \begin{verbatim}
@@ -508,17 +508,17 @@ plt.show()
 % \end{verbatim}
 
 \subsubsection{Validação e Seleção do Modelo}
-#TODO: Adicionar descrição da validação e seleção do modelo.
+TODO: Adicionar descrição da validação e seleção do modelo.
 
 % Validamos os modelos utilizando técnicas como a validação cruzada e comparando métricas de desempenho, como acurácia e F1-score, para selecionar o modelo mais adequado.
 
 \subsection{Conclusões Preliminares}
-#TODO: Adicionar conclusões preliminares.
+TODO: Adicionar conclusões preliminares.
 % As análises iniciais indicam que características como `battery_power`, `ram` e `px_height` têm impacto significativo na classificação dos preços dos celulares. Os resultados detalhados serão discutidos na próxima seção.
 
 
 \subsection{Modelagem e Classificação}
-#TODO: Adicionar descrição da modelagem e classificação dos dados.
+TODO: Adicionar descrição da modelagem e classificação dos dados.
 % Após o pré-processamento, empregamos várias técnicas de mineração de dados para classificar os celulares em suas respectivas faixas de preço. Os métodos incluíram:
 
 % \begin{itemize}
@@ -531,13 +531,66 @@ plt.show()
 % Utilizamos métricas como acurácia, precisão, recall e F1-score para avaliar o desempenho dos modelos. A seleção do modelo final foi baseada na melhor combinação de performance e capacidade de generalização para dados não vistos.
 
 \subsection{Validação do Modelo}
-#TODO: Adicionar descrição da validação do modelo.
+TODO: Adicionar descrição da validação do modelo.
 
 % Para validar a eficácia dos modelos, aplicamos técnicas de validação cruzada no conjunto de treinamento e testamos os modelos selecionados no conjunto de teste. Esta abordagem ajudou a garantir que os modelos eram robustos e confiáveis para previsões em novos dados.
 
+% Aqui você começará a seção de Resultados, descrevendo os achados do seu estudo.
 \section{Resultados}
 
-% Aqui você começará a seção de Resultados, descrevendo os achados do seu estudo.
+Nesta seção, apresentamos os resultados obtidos a partir da aplicação de técnicas de mineração de dados e aprendizado de máquina no conjunto de dados de características de celulares. As análises foram conduzidas com o objetivo de classificar os celulares em diferentes faixas de preço com base em suas especificações técnicas.
+
+\subsection{Avaliação dos Modelos de Classificação}
+
+Aplicamos diversos algoritmos, incluindo árvores de decisão, florestas aleatórias e redes neurais. Os modelos foram avaliados com base em várias métricas, como acurácia, precisão, recall e F1-score. Os resultados mostraram que o modelo [inserir modelo mais eficaz] alcançou a maior acurácia, com [inserir valor]% de acurácia.
+
+\begin{table}[h]
+\centering
+\caption{Avaliação dos Modelos de Classificação}
+\begin{tabular}{|l|c|c|c|c|}
+\hline
+Modelo & Acurácia & Precisão & Recall & F1-score \\
+\hline
+Árvore de Decisão & [valor] & [valor] & [valor] & [valor] \\
+Floresta Aleatória & [valor] & [valor] & [valor] & [valor] \\
+Rede Neural & [valor] & [valor] & [valor] & [valor] \\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Análise dos Resultados}
+
+A análise das características mais significativas indicou que [inserir características mais relevantes] foram determinantes na classificação dos preços dos celulares. Esses resultados estão alinhados/são contrastantes com as expectativas iniciais, sugerindo que [inserir análise e interpretação dos resultados].
+
+\subsection{Visualizações e Insights Adicionais}
+
+Os mapas de calor de correlação e as visualizações dos componentes principais do PCA 
+forneceram insights valiosos sobre as relações entre diferentes características 
+dos celulares. 
+As figuras a seguir ilustram essas visualizações e destacam as características
+mais relevantes para a classificação dos preços dos celulares.
+
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.2]{matrix_correlation.png}}
+    \caption{[Matriz de Correlação]}
+    \label{fig:imagem1}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.2]{xzscore-pca-2d.png}}
+    \caption{[Análise de Componentes Principais - 2D]}
+    \label{fig:imagem2}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[scale=0.4]{xzscore-pca-3d.png}}
+    \caption{[Análise de Componentes Principais - 3D]}
+    \label{fig:imagem3}
+\end{figure}
+
+
+Os resultados destacam a importância de [inserir insights obtidos] na determinação das faixas de preço dos celulares.
 
 
 % 2. Revisão Bibliográfica
