@@ -1,14 +1,11 @@
 {
-  "folders": [
-    {
-      "path": "."
-    },
-    {
-      "path": "../DataMining-MuriloVarges"
-    },
-    {
-      "path": "../mobile-price-classification"
-    }
-  ],
-  "settings": {}
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../DataMining-MuriloVarges"
+		}
+	],
+	"settings": {}
 }
